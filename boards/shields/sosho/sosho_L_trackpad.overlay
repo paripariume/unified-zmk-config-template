@@ -4,6 +4,7 @@
 &glidepoint {
     status = "okay";
     invert-x;
+    primary-tap-enable;
 };
 &glidepoint_split {
     status = "okay";
