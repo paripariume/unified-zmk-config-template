@@ -65,7 +65,7 @@ keymap {
             &kp ESC    &kp LALT              &mo 2  &kp SPACE  &mo 1  &kp LA(GRAVE)              &mo 3     &kp LGUI
         >;
 		//左のエンコーダは音量調整、右のエンコーダは&ec_ms_rでスクロール。
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &ec_ms_r SCRL_DOWN SCRL_UP>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &ec_ms_r SCRL_UP SCRL_DOWN>;
     };
 	
     layer_1 {
@@ -84,8 +84,8 @@ keymap {
             &trans &kp F11 &kp F12 &kp F13 &kp F14 &kp F15    &trans  &kp SEMI  &kp SQT   &trans    &kp QMARK  &kp BSLH
             &trans &trans                  &trans  &trans     &trans  &trans                        &trans     &trans
         >;
-		//レイヤー2のときだけ、左手のエンコーダを回すとボリュームの上下ができるようになっています。
-		sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &ec_ms_r SCRL_DOWN SCRL_UP>;
+		//レイヤー2のときだけ、左手のエンコーダを回すとボリュームの上下ができるようになっています。右手のエンコーダは左右スクロール(時計回り=右)。
+		sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &ec_ms_r SCRL_LEFT SCRL_RIGHT>;
 
     };
 
